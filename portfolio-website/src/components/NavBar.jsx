@@ -6,8 +6,10 @@ import "../styles/NavBar.css"; // Create a CSS file for styling
 const Navbar = () => {
   return (
     <nav className="navbar">
-      <div className="container">
-        <h1 className="logo">My Portfolio</h1>
+      <div
+        className="nav-container"
+      >
+        <h1 className="logo">Balaji T</h1>
         <ul className="nav-links">
           <li>
             <Link to="/">Home</Link>

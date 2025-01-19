@@ -3,42 +3,54 @@
   background: linear-gradient(90deg, #6a11cb, #2575fc);
   color: #fff;
   padding: 1rem 2rem;
-  display: flex;
   justify-content: space-between;
   align-items: center;
   position: sticky;
   top: 0;
-  z-index: 10;
+  z-index: 1000;
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  display: flex;
 }
 
 /* Logo styling */
 .logo {
   font-size: 1.8rem;
   font-weight: bold;
-  color: #fff;
+  color: #ffd700;
   text-transform: uppercase;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+  margin-right: auto; /* Aligns the logo to the left */
+  cursor: pointer;
 }
 
-/* Navigation links */
-.nav-links {
-  list-style: none;
+/* Navbar container */
+.nav-container {
   display: flex;
-  gap: 2rem;
+  justify-content: space-between; /* Aligns logo to the left and nav-links to the right */
+  align-items: center;
+  width: 100%;
+}
+
+/* Navbar links */
+.nav-links {
+  display: flex; /* Ensures links are inline */
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 .nav-links li {
-  font-size: 1rem;
+  margin-left: 2rem; /* Adds spacing between list items */
 }
 
 .nav-links a {
-  color: #fff;
+  color: white;
   text-decoration: none;
-  transition: color 0.3s ease;
+  font-size: 1rem;
+  transition: color 0.3s ease, transform 0.3s ease;
 }
 
 .nav-links a:hover {
   color: #ffd700;
-  text-decoration: underline;
+  transform: scale(1.1);
 }
