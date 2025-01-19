@@ -1,0 +1,30 @@
+/* Footer Section */
+.footer {
+  background: #333;
+  color: #f1f1f1;
+  padding: 2rem 1rem;
+  text-align: center;
+}
+
+.footer p {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  color: #ddd;
+}
+
+.footer .social-links {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.footer .social-links a {
+  color: #ffd700;
+  font-size: 1.2rem;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer .social-links a:hover {
+  color: #ffcc33;
+}
