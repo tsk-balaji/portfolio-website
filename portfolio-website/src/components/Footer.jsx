@@ -6,7 +6,7 @@ import "../styles/Footer.css";
 const Footer = () => {
   return (
     <footer className="footer">
-      <div className="container">
+      <div className="footer-container">
         <p>© 2025 Balaji T. All rights reserved.</p>
         <div className="social-links">
           <a

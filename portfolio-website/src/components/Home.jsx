@@ -64,13 +64,13 @@ const Home = () => {
         <Projects />
       </section>
 
+      <section id="skills" className="section">
+        <Skills />
+      </section>
+
       {/* Contact Section */}
       <section id="contact" className="section">
         <Contact />
-      </section>
-
-      <section id="skills" className="section">
-        <Skills />
       </section>
     </section>
   );
