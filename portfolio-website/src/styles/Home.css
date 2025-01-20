@@ -1,65 +1,67 @@
-/* General Hero Section Styling */
-.home {
-  height: 100vh;
-  background: linear-gradient(to bottom, #6a11cb, #2575fc);
-  color: white;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  padding: 0 2rem;
-}
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+  }
 
-.home .container {
-  max-width: 800px;
-  animation: fadeIn 1.5s ease-in-out;
-}
+  .home-content {
+    flex: 1; /* Use remaining space */
+    padding-right: 20px; /* Add spacing between text and image */
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    backdrop-filter: blur(10px);
+    padding: 2rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  }
 
-.home h1 {
-  font-size: 3.5rem;
-  margin-bottom: 1rem;
-  text-transform: capitalize;
-}
+  .home-image {
+    flex: 1; /* Use remaining space */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 
-.home .highlight {
-  color: #ffd700;
-}
+  .home-image img {
+    width: 400px;
+    height: 400px;
+    border-radius: 50%; /* Make the image circular */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Optional shadow for a better effect */
+    transition: transform 0.3s ease-in-out; /* Smooth transition for the transform property */
+  }
 
-.home .typed-text {
-  font-size: 1.5rem;
-  margin: 1rem 0;
-  color: #fff;
-  font-weight: bold;
-}
+  .home-image img:hover {
+    transform: scale(1.1); /* Slightly enlarge the image on hover */
+  }
 
-.home .intro {
-  font-size: 1.2rem;
-  line-height: 1.8;
-  margin-bottom: 2rem;
-}
+  .highlight {
+    color: #ffc107; /* Yellow color for the highlight */
+  }
 
-.actions {
-  display: flex;
-  gap: 1rem;
-  justify-content: center;
-}
+  .actions .btn {
+    padding: 0.5rem 1.5rem;
+    border-radius: 25px;
+    font-weight: bold;
+    font-size: 1rem;
+  }
 
-.actions .btn {
-  padding: 0.8rem 2rem;
-  border: none;
-  border-radius: 25px;
-  font-size: 1rem;
-  cursor: pointer;
-  transition: transform 0.3s ease, background 0.3s ease;
-}
+  .primary {
+    background-color: #ffc107;
+    color: black;
+    text-decoration: none;
+    margin-right: 10px;
+  }
 
-.actions .btn.primary {
-  background: #ffd700;
-  color: #000;
-}
+  .secondary {
+    background-color: transparent;
+    border: 2px solid white;
+    color: white;
+    text-decoration: none;
+  }
 
-.actions .btn.secondary {
-  background: transparent;
-  color: white;
-  border: 2px solid #fff;
-}
+  .home {
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+  }
+
+
+  

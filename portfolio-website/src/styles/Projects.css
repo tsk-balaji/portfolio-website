@@ -1,29 +1,30 @@
 /* Projects Section */
 .projects {
-  background: white;
-  color: #333;
+  background: transparent;
+  color: #fff;
   padding: 4rem 2rem;
   text-align: center;
 }
 
 .projects h2 {
   font-size: 2.5rem;
-  color: #2575fc;
+  color: #ffd700; /* Yellow color for main heading */
   margin-bottom: 2rem;
 }
 
 .project-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 2rem;
+  grid-template-columns: repeat(3, 1fr); /* Ensure three columns in the grid */
+  gap: 2rem; /* Adjust the gap between grid items */
 }
 
 .project-card {
-  background: #f1f1f1;
-  border-radius: 10px;
-  padding: 1.5rem;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  width: 40%; /* Set each project item to take up 30% of the screen width */
+  margin: 0 auto; /* Center the project items horizontally */
+  aspect-ratio: 1; /* Optional: Maintain square aspect ratio */
+  box-shadow: 0px 4px 6px rgba(143, 21, 180, 0.1); /* Optional: Add shadow for better visual effect */
+  background-color: rgba(255, 255, 255, 0.1); /* Optional: Background color for the project cards */
+  padding: 1rem; /* Optional: Padding for content inside the cards */
 }
 
 .project-card:hover {
@@ -33,14 +34,14 @@
 
 .project-card h3 {
   font-size: 1.5rem;
-  color: #2575fc;
+  color: #ffd700; /* Yellow color for subheadings */
   margin-bottom: 1rem;
 }
 
 .project-card p {
   font-size: 1rem;
   margin-bottom: 1.5rem;
-  color: #555;
+  color: #fff; /* White color for text */
 }
 
 .project-card a {

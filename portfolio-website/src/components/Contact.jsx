@@ -5,7 +5,7 @@ import "../styles/Contact.css"; // Create a CSS file for styling
 const Contact = () => {
   return (
     <section className="contact" id="contact">
-      <div className="container">
+      <div className="contact-container">
         <h2>Contact Me</h2>
         <form>
           <input type="text" placeholder="Your Name" required />

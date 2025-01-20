@@ -3,27 +3,19 @@ import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import Home from "./components/Home";
-import About from "./components/About";
-import Projects from "./components/Projects";
-import Contact from "./components/Contact";
-import Footer from "./components/Footer";
+import  Footer  from "./components/Footer";
 
 function App() {
   return (
     <Router>
-      <div className="container-fluid mt-4">
+      <div className="container-fluid">
         <Navbar />
-        <div className="row">
-          <div className="col">
-            <Routes>
-              <Route path="/" element={<Home />} />
-              <Route path="/about" element={<About />} />
-              <Route path="/projects" element={<Projects />} />
-              <Route path="/contact" element={<Contact />} />
-            </Routes>
-            <Footer />
-          </div>
-        </div>
+        <Routes>
+          <Route path="/" element={<Home />} />
+        </Routes>
+        <section id="Footer" className="section">
+          <Footer />
+        </section>
       </div>
     </Router>
   );

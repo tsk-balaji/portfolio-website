@@ -1,35 +1,77 @@
-import React from "react";
+// eslint-disable-next-line no-unused-vars
+import React, { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import "../styles/Home.css";
+
 import Typed from "react-typeme";
-import "../styles/Home.css"; // Ensure Home.css includes styles for new elements
+import Contact from "./Contact";
+import Projects from "./Projects";
+import Skills from "./Skills";
+import Experience from "./Experience";
+import myImage from "../assets/TSK_BG_BLUR_EDIT.jpeg";
 
 const Home = () => {
+  useEffect(() => {
+    AOS.init({ duration: 1000 });
+  }, []);
+
   return (
     <section className="home">
       <div className="container">
-        <h1>
-          Hello, I&apos;m <span className="highlight">Balaji T</span>
-        </h1>
-        <Typed
-          className="typed-text"
-          strings={["  MERN Stack Developer"]}
-          typeSpeed={50}
-          backSpeed={70}
-          showCursor={false}
-        />
-        <p className="intro">
-          Passionate about building user-friendly, scalable, and efficient web
-          applications. Experienced in creating dynamic solutions with modern
-          technologies like React, Node.js, Express, and MongoDB.
-        </p>
-        <div className="actions">
-          <a href="projects" className="btn primary">
-            View Projects
-          </a>
-          <a href="contact" className="btn secondary">
-            Get in Touch
-          </a>
+        <div className="home-content">
+          <h1>
+            <span className="highlight">Welcome to my Portfolio</span>
+          </h1>
+          <div className="typed-wrapper">
+            <section id="about" className="section">
+              <Typed
+                className="typed-text text-secondary"
+                strings={[
+                  " I'm a passionate MERN Stack Developer with over 4 years of experience in designing and developing user-centric web applications.",
+                  "Proficient in modern technologies like React, Node.js, Express, and MongoDB to build scalable and efficient solutions.",
+                  "Dedicated to continuous learning and implementing best practices in web development.",
+                ]}
+                typeSpeed={50}
+                backSpeed={70}
+                showCursor={false}
+              />
+            </section>
+          </div>
+          <section
+            className="actions pt-2 pb-2 text-center"
+            style={{ margin: "20px", padding: "10px" }}
+          >
+            <a href="#projects" className="btn primary">
+              View Projects
+            </a>
+            <a href="#contact" className="btn secondary">
+              Get in Touch
+            </a>
+          </section>
+        </div>
+        <div className="home-image">
+          <img src={myImage} alt="My Profile" />
         </div>
       </div>
+
+      <section id="experience" className="section">
+        <Experience />
+      </section>
+
+      {/* Projects Section */}
+      <section id="projects" className="section">
+        <Projects />
+      </section>
+
+      {/* Contact Section */}
+      <section id="contact" className="section">
+        <Contact />
+      </section>
+
+      <section id="skills" className="section">
+        <Skills />
+      </section>
     </section>
   );
 };
