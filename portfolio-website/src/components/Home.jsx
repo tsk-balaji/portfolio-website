@@ -9,6 +9,8 @@ import Contact from "./Contact";
 import Projects from "./Projects";
 import Skills from "./Skills";
 import Experience from "./Experience";
+import Education from "./Education";
+import Certifications from "./Certifications";
 import myImage from "../assets/TSK_BG_BLUR_EDIT.jpeg";
 
 const Home = () => {
@@ -66,6 +68,16 @@ const Home = () => {
 
       <section id="skills" className="section">
         <Skills />
+      </section>
+
+      {/* Education Section */}
+      <section id="education" className="section">
+        <Education />
+      </section>
+
+      {/* Certifications Section */}
+      <section id="certifications" className="section">
+        <Certifications />
       </section>
 
       {/* Contact Section */}

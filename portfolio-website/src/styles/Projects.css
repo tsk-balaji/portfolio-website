@@ -1,59 +1,131 @@
 /* Projects Section */
 .projects {
-  background: transparent;
-  color: #fff;
   padding: 4rem 2rem;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  color: #ffffff;
   text-align: center;
 }
 
-.projects h2 {
+.section-title {
   font-size: 2.5rem;
-  color: #ffd700; /* Yellow color for main heading */
+  color: #333;
   margin-bottom: 2rem;
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
+}
+
+.project-container {
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .project-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr); /* Ensure three columns in the grid */
-  gap: 2rem; /* Adjust the gap between grid items */
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
 }
 
 .project-card {
-  width: 40%; /* Set each project item to take up 30% of the screen width */
-  margin: 0 auto; /* Center the project items horizontally */
-  aspect-ratio: 1; /* Optional: Maintain square aspect ratio */
-  box-shadow: 0px 4px 6px rgba(143, 21, 180, 0.1); /* Optional: Add shadow for better visual effect */
-  background-color: rgba(255, 255, 255, 0.1); /* Optional: Background color for the project cards */
-  padding: 1rem; /* Optional: Padding for content inside the cards */
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 15px;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .project-card:hover {
   transform: translateY(-10px);
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
-.project-card h3 {
+.project-image-container {
+  width: 100%;
+  overflow: hidden;
+}
+
+.project-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.project-card:hover .project-image {
+  transform: scale(1.05);
+}
+
+.project-details {
+  padding: 1.5rem;
+  text-align: left;
+}
+
+.project-title {
   font-size: 1.5rem;
-  color: #ffd700; /* Yellow color for subheadings */
-  margin-bottom: 1rem;
+  margin-bottom: 0.5rem;
+  color: #00bcd4;
 }
 
-.project-card p {
+.project-description {
   font-size: 1rem;
-  margin-bottom: 1.5rem;
-  color: #fff; /* White color for text */
+  color: #b0bec5;
 }
 
-.project-card a {
-  background: #2575fc;
-  color: white;
-  padding: 0.5rem 1.5rem;
-  border-radius: 20px;
+.project-card-link {
   text-decoration: none;
-  font-size: 1rem;
-  transition: background 0.3s ease;
+  color: inherit;
 }
 
-.project-card a:hover {
-  background: #6a11cb;
+.project-card-link:hover .project-card {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.project-card-link:hover .project-image {
+  transform: scale(1.05);
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slide-up {
+  from {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes zoom-in {
+  from {
+    transform: scale(0.9);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.animate-fade-in {
+  animation: fade-in 1s ease-in-out forwards;
+}
+
+.animate-slide-up {
+  animation: slide-up 1s ease-in-out forwards;
+}
+
+.animate-zoom-in {
+  animation: zoom-in 0.8s ease-in-out forwards;
 }

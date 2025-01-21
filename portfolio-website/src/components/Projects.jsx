@@ -1,27 +1,54 @@
 // eslint-disable-next-line no-unused-vars
 import React from "react";
-import "../styles/Projects.css"; // Create a CSS file for styling
+import projectImage from "../assets/jira-clone.png";
+import urlShortener from "../assets/url-shortener.png";
+import "../styles/Projects.css"; // Ensure you create and update the CSS file
 
 const Projects = () => {
   const projects = [
-    { title: "Project 1", description: "Description of Project 1", link: "#" },
-    { title: "Project 2", description: "Description of Project 2", link: "#" },
-    { title: "Project 3", description: "Description of Project 3", link: "#" },
+    {
+      title: "Project Management Tool",
+      description: "A clone of the popular Jira project management tool.",
+      link: "https://project-management-tool-tsk.netlify.app/",
+      image: projectImage,
+    },
+    {
+      title: "URL Shortener",
+      description: "A web app to shorten and manage URLs.",
+      link: "https://url-shortener-tsk.netlify.app/",
+      image: urlShortener,
+    },
   ];
 
   return (
     <section className="projects" id="projects">
       <div className="project-container">
-        <h2>My Projects</h2>
+        <h2 style={{ color: "white" }} className="animate-fade-in">
+          My Personal Projects
+        </h2>
         <div className="project-grid">
           {projects.map((project, index) => (
-            <div key={index} className="project-card">
-              <h3>{project.title}</h3>
-              <p>{project.description}</p>
-              <a href={project.link} target="_blank" rel="noopener noreferrer">
-                View Project
-              </a>
-            </div>
+            <a
+              key={index}
+              href={project.link}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="project-card-link animate-slide-up"
+            >
+              <div className="project-card">
+                <div className="project-image-container">
+                  <img
+                    src={project.image}
+                    alt={`${project.title} Preview`}
+                    className="project-image animate-zoom-in"
+                  />
+                </div>
+                <div className="project-details">
+                  <h3 className="project-title">{project.title}</h3>
+                  <p className="project-description">{project.description}</p>
+                </div>
+              </div>
+            </a>
           ))}
         </div>
       </div>

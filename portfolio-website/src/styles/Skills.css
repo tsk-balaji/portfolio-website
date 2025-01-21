@@ -1,10 +1,10 @@
 .skills {
-  background: linear-gradient(90deg, #6a11cb, #2575fc);
-  background-color: #f8f9fa;
+  /* background: linear-gradient(90deg, #6a11cb, #2575fc); */
+  backdrop-filter: blur(10px);
+  /* background-color: #f8f9fa; */
   text-align: center;
   padding: 2rem;
   border-radius: 15px;
-  backdrop-filter: blur(10px);
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   border: 1px solid rgba(255, 255, 255, 0.3);
 }
