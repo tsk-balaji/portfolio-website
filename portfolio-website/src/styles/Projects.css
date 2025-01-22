@@ -1,11 +1,12 @@
 /* Projects Section */
 .projects {
   padding: 4rem 2rem;
-  background: rgba(255, 255, 255, 0.1);
+  background: transparent; /* Transparent background */
   backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
-  color: #ffffff;
-  text-align: center;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  animation: fadeIn 1s ease-in-out;
 }
 
 .section-title {
