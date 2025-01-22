@@ -28,14 +28,14 @@ const Contact = () => {
       // Send email via EmailJS
       emailjs
         .send(
-          "YOUR_SERVICE_ID", // Replace with your EmailJS Service ID
-          "YOUR_TEMPLATE_ID", // Replace with your EmailJS Template ID
+          "service_dbvypwo", // Replace with your EmailJS Service ID
+          "template_nusze36", // Replace with your EmailJS Template ID
           {
             name: values.name,
             email: values.email,
             message: values.message,
           },
-          "YOUR_PUBLIC_KEY" // Replace with your EmailJS Public Key
+          "qqckMV4M8UF-Q37xi" // Replace with your EmailJS Public Key
         )
         .then(
           (response) => {
