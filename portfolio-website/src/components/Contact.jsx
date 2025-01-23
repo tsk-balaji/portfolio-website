@@ -4,6 +4,8 @@ import { useFormik } from "formik";
 import * as Yup from "yup";
 import emailjs from "@emailjs/browser";
 import "../styles/Contact.css";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 const Contact = () => {
   // Formik form handling and validation
@@ -28,24 +30,36 @@ const Contact = () => {
       // Send email via EmailJS
       emailjs
         .send(
-          "service_dbvypwo", // Replace with your EmailJS Service ID
-          "template_nusze36", // Replace with your EmailJS Template ID
+          "service_dbvypwo",
+          "template_nusze36",
           {
             name: values.name,
             email: values.email,
             message: values.message,
           },
-          "qqckMV4M8UF-Q37xi" // Replace with your EmailJS Public Key
+          "qqckMV4M8UF-Q37xi"
         )
         .then(
           (response) => {
             console.log("SUCCESS!", response.status, response.text);
-            alert("Message Sent Successfully!");
+            toast.success("Message Sent Successfully!", {
+              position: "top-center",
+              autoClose: 5000,
+              hideProgressBar: false,
+              closeOnClick: true,
+              toastId: "success",
+            });
             resetForm();
           },
           (error) => {
             console.error("FAILED...", error);
-            alert("Failed to send the message. Please try again.");
+            toast.error("Failed to send the message. Please try again.", {
+              position: "top-center",
+              autoClose: 3000,
+              hideProgressBar: false,
+              closeOnClick: true,
+              toastId: "error",
+            });
           }
         );
     },
@@ -100,6 +114,7 @@ const Contact = () => {
           </button>
         </form>
       </div>
+      <ToastContainer />
     </section>
   );
 };

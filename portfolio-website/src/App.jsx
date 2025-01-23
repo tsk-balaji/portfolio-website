@@ -1,9 +1,10 @@
-// eslint-disable-next-line no-unused-vars
-import React from "react";
+import "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import Home from "./components/Home";
-import  Footer  from "./components/Footer";
+import Footer from "./components/Footer";
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 function App() {
   return (
@@ -13,9 +14,8 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
         </Routes>
-        <section id="Footer" className="section">
-          <Footer />
-        </section>
+        <Footer />
+        <ToastContainer position="top-center" autoClose={5000} />
       </div>
     </Router>
   );

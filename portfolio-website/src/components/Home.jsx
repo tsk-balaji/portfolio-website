@@ -3,6 +3,7 @@ import React, { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import "../styles/Home.css";
+import { FaLinkedin, FaGithub, FaInstagram } from "react-icons/fa";
 
 import Typed from "react-typeme";
 import Contact from "./Contact";
@@ -30,7 +31,7 @@ const Home = () => {
               <Typed
                 className="typed-text text-secondary"
                 strings={[
-                  " I'm a passionate MERN Stack Developer with over 4 years of experience in designing and developing user-centric web applications.",
+                  "  I'm a passionate MERN Stack Developer with over 4 years of experience in designing and developing user-centric web applications.",
                   "Proficient in modern technologies like React, Node.js, Express, and MongoDB to build scalable and efficient solutions.",
                   "Dedicated to continuous learning and implementing best practices in web development.",
                 ]}
@@ -44,12 +45,45 @@ const Home = () => {
             className="actions pt-2 pb-2 text-center"
             style={{ margin: "20px", padding: "10px" }}
           >
-            <a href="#projects" className="btn primary">
-              View Projects
+            <a href="/path/to/your-cv.pdf" className="btn primary" download>
+              Download my Resume
             </a>
-            <a href="#contact" className="btn secondary">
-              Get in Touch
-            </a>
+          </section>
+
+          <section className="connect">
+            <h3>Connect with me :</h3>
+            <div
+              className="social-links"
+              style={{ display: "flex", justifyContent: "center", gap: "20px" }}
+            >
+              <a
+                href="https://www.linkedin.com/in/tskbalaji/"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="LinkedIn"
+                style={{ color: "#0e76a8", fontSize: "2rem" }}
+              >
+                <FaLinkedin />
+              </a>
+              <a
+                href="https://github.com/tsk-balaji"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="GitHub"
+                style={{ color: "#171515", fontSize: "2rem" }}
+              >
+                <FaGithub />
+              </a>
+              <a
+                href="https://www.instagram.com/tskbalaji"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Instagram"
+                style={{ color: "#E1306C", fontSize: "2rem" }}
+              >
+                <FaInstagram />
+              </a>
+            </div>
           </section>
         </div>
         <div className="home-image">
