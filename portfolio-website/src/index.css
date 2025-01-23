@@ -67,3 +67,26 @@ button:focus-visible {
     background-color: #f9f9f9;
   }
 }
+
+/* Dark Theme */
+body.dark-mode {
+  background: linear-gradient(to bottom, #1a1a1a, #121212);
+  color: rgba(255, 255, 255, 0.87);
+}
+
+body.dark-mode #root {
+  color: rgba(255, 255, 255, 0.87);
+}
+
+body.dark-mode h1 {
+  color: rgba(255, 255, 255, 0.87);
+}
+
+body.dark-mode button {
+  background-color: #242424;
+  color: rgba(255, 255, 255, 0.87);
+  border-color: #646cff;
+}
+body.dark-mode button:hover {
+  border-color: #74c0ff;
+}

@@ -1,13 +1,25 @@
-// eslint-disable-next-line no-unused-vars
-import React from "react";
+/* eslint-disable no-unused-vars */
+import React, { useState } from "react";
 import { Link } from "react-scroll";
+import { DarkModeSwitch } from "react-toggle-dark-mode";
 import "../styles/NavBar.css";
 
 const Navbar = () => {
+  const [darkMode, setDarkMode] = useState(false);
+
+  const toggleTheme = () => {
+    setDarkMode(!darkMode);
+    if (!darkMode) {
+      document.body.classList.add("dark-mode");
+    } else {
+      document.body.classList.remove("dark-mode");
+    }
+  };
+
   return (
-    <nav className="navbar">
+    <nav className={`navbar ${darkMode ? "navbar-dark" : "navbar-light"}`}>
       <div className="nav-container">
-        <h1 className="logo ">Balaji T</h1>
+        <h1 className="logo">Balaji T</h1>
         <ul className="nav-links">
           <li>
             <Link to="/" smooth={true} duration={500} offset={-70}>
@@ -35,6 +47,14 @@ const Navbar = () => {
             </Link>
           </li>
         </ul>
+
+        {/* Dark Mode Toggle with "Switch Mode" text below */}
+        <div
+          className="theme-toggle-container"
+          style={{ marginLeft: "40px", marginBottom: "5px" }}
+        >
+          <DarkModeSwitch checked={darkMode} onChange={toggleTheme} size={40} />
+        </div>
       </div>
     </nav>
   );
