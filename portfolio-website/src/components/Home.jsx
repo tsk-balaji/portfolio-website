@@ -62,6 +62,7 @@ const Home = () => {
                 rel="noopener noreferrer"
                 aria-label="LinkedIn"
                 style={{ color: "#0e76a8", fontSize: "2rem" }}
+                title="Add Connection"
               >
                 <FaLinkedin />
               </a>
@@ -71,6 +72,7 @@ const Home = () => {
                 rel="noopener noreferrer"
                 aria-label="GitHub"
                 style={{ color: "#171515", fontSize: "2rem" }}
+                title="Check my works at GitHub"
               >
                 <FaGithub />
               </a>
@@ -80,6 +82,7 @@ const Home = () => {
                 rel="noopener noreferrer"
                 aria-label="Instagram"
                 style={{ color: "#E1306C", fontSize: "2rem" }}
+                title="Let's Connect"
               >
                 <FaInstagram />
               </a>

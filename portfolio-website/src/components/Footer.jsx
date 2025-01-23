@@ -7,7 +7,7 @@ const Footer = () => {
   return (
     <footer className="footer">
       <div className="footer-container">
-        <p>© 2025 Balaji T. All rights reserved.</p>
+        <p>© {new Date().getFullYear()} Balaji T. All rights reserved.</p>
         <div className="social-links">
           <a
             href="https://www.linkedin.com/in/tskbalaji/"

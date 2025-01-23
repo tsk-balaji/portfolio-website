@@ -5,25 +5,19 @@ import "../styles/Education.css";
 const Education = () => {
   const education = [
     {
-      degree: "Bachelor of Technology in Computer Science",
-      institution: "XYZ University",
-      year: "2016 - 2020",
-      description:
-        "Focused on full-stack web development, data structures, and algorithms.",
-    },
-    {
-      degree: "Master of Science in Software Engineering",
-      institution: "ABC Institute of Technology",
+      degree: "Master of Computer Applications",
+      institution: "Chandigarh University",
       year: "2020 - 2022",
-      description:
-        "Specialized in software design, cloud computing, and advanced databases.",
     },
     {
-      degree: "High School Diploma",
-      institution: "St. John's High School",
+      degree: "Bachelor of Science in Physics",
+      institution: "PSG College of Arts and Science",
+      year: "2020 - 2022",
+    },
+    {
+      degree: "Senior Secondary ",
+      institution: "Amrita Vidyalayam Senior Secondary School",
       year: "2014 - 2016",
-      description:
-        "Achieved academic excellence in science with a focus on Mathematics and Physics.",
     },
   ];
 
@@ -35,9 +29,10 @@ const Education = () => {
           {education.map((edu, index) => (
             <div key={index} className="education-card animate-slide-up">
               <h3 className="education-degree">{edu.degree}</h3>
+              {index === education.length - 1 && <p className="empty-line"></p>}
               <p className="education-institution">{edu.institution}</p>
+              {index !== education.length - 1 && <p className="empty-line1"></p>}
               <p className="education-year">{edu.year}</p>
-              <p className="education-description">{edu.description}</p>
             </div>
           ))}
         </div>

@@ -62,16 +62,20 @@
 
 .education-institution {
   font-size: 1.2rem;
-  color: #b0bec5;
+  color: white;
 }
 
 .education-year {
   font-size: 1rem;
-  color: #757575;
+  color: rgb(50, 49, 49);
+  font-weight: bold;
   margin-bottom: 1rem;
 }
 
-.education-description {
-  font-size: 1rem;
-  color: #e0e0e0;
+.empty-line {
+  height: 1.5rem; /* Adjust the height as needed */
+}
+
+.empty-line1 {
+  height: 1rem; /* Adjust the height as needed */
 }

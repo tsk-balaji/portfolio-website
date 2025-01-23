@@ -6,7 +6,6 @@ import {
   FaNodeJs,
   FaHtml5,
   FaCss3Alt,
-  FaGitAlt,
   FaGithub,
 } from "react-icons/fa";
 import { SiMongodb, SiExpress, SiBootstrap } from "react-icons/si";
@@ -45,13 +44,25 @@ const Skills = () => {
             <FaCss3Alt color="#1572B6" />
             <p style={{ color: "white" }}>CSS</p>
           </div>
-          <div className="icon">
+          {/* <div className="icon">
             <FaGitAlt color="#F05032" />
             <p style={{ color: "white" }}>Git</p>
-          </div>
+          </div> */}
           <div className="icon">
             <FaGithub color="#181717" />
             <p style={{ color: "white" }}>GitHub</p>
+          </div>
+          <div className="icon">
+            <img
+              src="https://cdn-icons-png.flaticon.com/512/5968/5968350.png"
+              alt="Python"
+              style={{
+                width: "52.8px",
+                height: "52.8px",
+                marginRight: "10px",
+              }}
+            />
+            <p style={{ color: "white" }}>Python</p>
           </div>
         </div>
       </div>
