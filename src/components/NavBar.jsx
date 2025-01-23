@@ -2,7 +2,7 @@
 import React, { useState } from "react";
 import { Link } from "react-scroll";
 import { DarkModeSwitch } from "react-toggle-dark-mode";
-import "../styles/NavBar.css";
+import "../styles/Navbar.css";
 
 const Navbar = () => {
   const [darkMode, setDarkMode] = useState(false);
