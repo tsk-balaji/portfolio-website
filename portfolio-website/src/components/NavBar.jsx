@@ -17,7 +17,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav className={`navbar ${darkMode ? "navbar-dark" : "navbar-light"}`}>
+    <nav className={`navbar ${darkMode ? "navbar-light" : "navbar-dark"}`}>
       <div className="nav-container">
         <h1 className="logo">Balaji T</h1>
         <ul className="nav-links">

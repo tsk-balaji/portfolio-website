@@ -7,6 +7,7 @@ import {
   FaHtml5,
   FaCss3Alt,
   FaGithub,
+  FaAws,
 } from "react-icons/fa";
 import { SiMongodb, SiExpress, SiBootstrap } from "react-icons/si";
 
@@ -44,10 +45,6 @@ const Skills = () => {
             <FaCss3Alt color="#1572B6" />
             <p style={{ color: "white" }}>CSS</p>
           </div>
-          {/* <div className="icon">
-            <FaGitAlt color="#F05032" />
-            <p style={{ color: "white" }}>Git</p>
-          </div> */}
           <div className="icon">
             <FaGithub color="#181717" />
             <p style={{ color: "white" }}>GitHub</p>
@@ -63,6 +60,11 @@ const Skills = () => {
               }}
             />
             <p style={{ color: "white" }}>Python</p>
+          </div>
+          {/* AWS Icon */}
+          <div className="icon">
+            <FaAws color="#FF9900" />
+            <p style={{ color: "white" }}>AWS</p>
           </div>
         </div>
       </div>
