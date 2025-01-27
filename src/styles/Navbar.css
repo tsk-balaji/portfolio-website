@@ -88,52 +88,9 @@ body.dark-mode .nav-links a:hover {
   cursor: pointer;
 }
 
-/* Carousel Styles */
-.carousel-container {
-  display: none;
-  position: relative;
-  width: 100%;
-  overflow: hidden;
-}
-
-.carousel-container.show {
+/* Show navbar links when toggled */
+.nav-links.show {
   display: flex;
-  align-items: center;
-}
-
-.carousel {
-  display: flex;
-  transition: transform 0.3s ease-in-out;
-}
-
-.carousel li {
-  flex: 0 0 100%;
-  list-style: none;
-  text-align: center;
-}
-
-.carousel li.active {
-  font-weight: bold;
-}
-
-.carousel-btn {
-  background: none;
-  border: none;
-  color: white;
-  font-size: 2rem;
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  z-index: 10;
-}
-
-.carousel-btn.prev {
-  left: 10px;
-}
-
-.carousel-btn.next {
-  right: 10px;
 }
 
 /* Responsive Styles */
