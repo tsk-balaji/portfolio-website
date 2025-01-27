@@ -14,7 +14,8 @@ const Projects = () => {
     },
     {
       title: "URL Shortener",
-      description: "A web app to shorten and manage URLs.",
+      description:
+        "A web app to shorten and manage URLs. Dashbord to showcase the Statistics",
       link: "https://url-shortener-tsk.netlify.app/",
       image: urlShortener,
     },

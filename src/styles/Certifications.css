@@ -47,7 +47,64 @@
   color: #b0bec5;
 }
 
-.certification-year {
+.certification-valid {
   font-size: 1rem;
   color: #757575;
+}
+
+/* Responsive Styles */
+@media (max-width: 1200px) {
+  .certifications {
+    padding: 3rem 1.5rem;
+  }
+
+  .certifications-grid {
+    gap: 1.5rem;
+  }
+
+  .certification-card {
+    padding: 1.5rem;
+  }
+}
+
+@media (max-width: 992px) {
+  .certifications {
+    padding: 2.5rem 1rem;
+  }
+
+  .certifications-grid {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem;
+  }
+
+  .certification-card {
+    padding: 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .certifications {
+    padding: 2rem 0.5rem;
+  }
+
+  .certifications-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .certification-card {
+    padding: 0.5rem;
+  }
+
+  .certification-title {
+    font-size: 1.2rem;
+  }
+
+  .certification-provider {
+    font-size: 1rem;
+  }
+
+  .certification-year {
+    font-size: 0.8rem;
+  }
 }

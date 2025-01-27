@@ -2,7 +2,7 @@
 .footer {
   background: #333;
   color: #f1f1f1;
-  padding: 0.2rem;
+  padding: 0.5rem 1rem; /* Adjust padding for better spacing */
   text-align: center;
 }
 
@@ -16,6 +16,7 @@
   display: flex;
   justify-content: center;
   gap: 1rem;
+  flex-wrap: wrap; /* Allow wrapping on smaller screens */
 }
 
 .footer .social-links a {
@@ -27,4 +28,36 @@
 
 .footer .social-links a:hover {
   color: #ffcc33;
+}
+
+/* Responsive Styles */
+
+/* For screens up to 768px */
+@media (max-width: 768px) {
+  .footer {
+    padding: 1rem 0.5rem; /* Adjust padding for smaller screens */
+  }
+
+  .footer p {
+    font-size: 0.9rem; /* Slightly smaller text */
+  }
+
+  .footer .social-links a {
+    font-size: 1rem; /* Reduce icon size */
+  }
+}
+
+/* For screens up to 576px */
+@media (max-width: 576px) {
+  .footer p {
+    font-size: 0.8rem; /* Smaller text for mobile devices */
+  }
+
+  .footer .social-links {
+    gap: 0.5rem; /* Reduce gap between social icons */
+  }
+
+  .footer .social-links a {
+    font-size: 0.9rem; /* Further reduce icon size */
+  }
 }

@@ -1,7 +1,6 @@
+/* Base Styles */
 .skills {
-  /* background: linear-gradient(90deg, #6a11cb, #2575fc); */
   backdrop-filter: blur(10px);
-  /* background-color: #f8f9fa; */
   text-align: center;
   padding: 2rem;
   border-radius: 15px;
@@ -63,5 +62,76 @@
   to {
     transform: translateY(0);
     opacity: 1;
+  }
+}
+
+/* Responsive Styles */
+
+/* Smartphones */
+@media (max-width: 480px) {
+  .skills {
+    padding: 1.5rem;
+  }
+  .skills h2 {
+    font-size: 2rem;
+  }
+  .skills-icons {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  .icon {
+    font-size: 2.5rem;
+    padding: 0.5rem;
+  }
+}
+
+/* Tablets */
+@media (min-width: 481px) and (max-width: 768px) {
+  .skills {
+    padding: 1.8rem;
+  }
+  .skills h2 {
+    font-size: 2.25rem;
+  }
+  .skills-icons {
+    gap: 2rem;
+  }
+  .icon {
+    font-size: 2.75rem;
+    padding: 0.6rem;
+  }
+}
+
+/* Small Laptops */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .skills {
+    padding: 2rem;
+  }
+  .skills h2 {
+    font-size: 2.5rem;
+  }
+  .skills-icons {
+    gap: 2.5rem;
+  }
+  .icon {
+    font-size: 3rem;
+    padding: 0.7rem;
+  }
+}
+
+/* Wide Screens */
+@media (min-width: 1025px) {
+  .skills {
+    padding: 2.5rem;
+  }
+  .skills h2 {
+    font-size: 2.5rem;
+  }
+  .skills-icons {
+    gap: 3rem;
+  }
+  .icon {
+    font-size: 3rem;
+    padding: 0.7rem;
   }
 }

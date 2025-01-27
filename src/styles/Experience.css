@@ -1,5 +1,5 @@
 .experience {
-  padding: 40px;
+  padding: 40px 20px;
   background: linear-gradient(
     to bottom right,
     rgba(255, 255, 255, 0.1),
@@ -7,7 +7,6 @@
   );
   backdrop-filter: blur(10px);
   border-radius: 10px;
-  max-width: 900px;
   margin: 0 auto;
 }
 
@@ -71,6 +70,7 @@
   color: #fff;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
   backdrop-filter: blur(10px);
+  animation: fadeInUp 0.5s ease-in-out;
 }
 
 .timeline-content h3 {
@@ -109,4 +109,37 @@
   backdrop-filter: blur(12px);
   border: 1px solid rgba(255, 255, 255, 0.2);
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive Timeline */
+@media (max-width: 768px) {
+  .timeline:before {
+    left: 10px;
+  }
+
+  .timeline-item {
+    width: 100%;
+    padding-left: 40px;
+  }
+
+  .timeline-item:nth-child(odd),
+  .timeline-item:nth-child(even) {
+    left: 0;
+  }
+
+  .timeline-dot {
+    left: 10px;
+  }
+}
+
+/* Animations */
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }

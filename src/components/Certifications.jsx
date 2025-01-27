@@ -5,18 +5,23 @@ import "../styles/Certifications.css";
 const Certifications = () => {
   const certifications = [
     {
-      title: "Full Stack Web Development",
-      provider: "Coursera",
-      year: "2021",
-    },
-    {
-      title: "AWS Solutions Architect",
-      provider: "Amazon Web Services",
+      title: "Infosys Global Agile Developer",
+      provider: "Infosys",
       year: "2022",
     },
     {
-      title: "React and Redux",
-      provider: "Udemy",
+      title: "Infosys Certified Python Programmer",
+      provider: "Infosys",
+      year: "2023",
+    },
+    {
+      title: "Everyday Excel, Part – 1 ",
+      provider: "Coursera",
+      year: "2020",
+    },
+    {
+      title: "Designing Presentation Slides",
+      provider: "Coursera",
       year: "2020",
     },
   ];

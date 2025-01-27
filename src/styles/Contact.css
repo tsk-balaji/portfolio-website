@@ -8,8 +8,6 @@
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   animation: fadeIn 1s ease-in-out;
   justify-items: center;
-}
-.contact {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -78,4 +76,53 @@ form button:hover {
   color: red;
   font-size: 0.9rem;
   margin-bottom: 1rem;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .contact {
+    padding: 3rem 1rem;
+  }
+
+  .contact-container {
+    width: 100%;
+    max-width: 350px;
+  }
+
+  .contact-container h2 {
+    font-size: 1.5rem;
+  }
+
+  form input,
+  form textarea {
+    font-size: 0.9rem;
+  }
+
+  form button {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .contact {
+    padding: 2rem 1rem;
+  }
+
+  .contact-container {
+    width: 100%;
+    max-width: 300px;
+  }
+
+  .contact-container h2 {
+    font-size: 1.2rem;
+  }
+
+  form input,
+  form textarea {
+    font-size: 0.8rem;
+  }
+
+  form button {
+    font-size: 0.8rem;
+  }
 }
