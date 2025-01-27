@@ -16,7 +16,7 @@
 
 /* Logo styling */
 .logo {
-  font-size: 1.8rem;
+  font-size: 1.5rem; /* Reduced font size */
   font-weight: bold;
   font-family: "Poppins", sans-serif;
   color: #ffd700;
@@ -49,7 +49,7 @@
 .nav-links a {
   color: white;
   text-decoration: none;
-  font-size: 1rem;
+  font-size: inherit; /* Inherit font size from the parent container */
   transition: color 0.3s ease, transform 0.3s ease;
 }
 

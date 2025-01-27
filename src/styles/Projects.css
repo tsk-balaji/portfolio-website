@@ -1,7 +1,7 @@
 /* Projects Section */
 .projects {
   padding: 4rem 2rem;
-  background: transparent; /* Transparent background */
+  background: transparent;
   backdrop-filter: blur(10px);
   border: 1px solid rgba(255, 255, 255, 0.2);
   border-radius: 15px;

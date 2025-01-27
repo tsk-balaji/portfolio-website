@@ -22,27 +22,32 @@ const Navbar = () => {
         <h1 className="logo">Balaji T</h1>
         <ul className="nav-links">
           <li>
-            <Link to="/" smooth={true} duration={500} offset={-70}>
+            <Link to="home" smooth={true} duration={500} offset={-70} style={{ fontSize: "1rem" }}>
               Home
             </Link>
           </li>
           <li>
-            <Link to="about" smooth={true} duration={500} offset={-70}>
-              About
+            <Link to="experience" smooth={true} duration={500} offset={-70} style={{ fontSize: "1rem" }}>
+              Exp
             </Link>
           </li>
           <li>
-            <Link to="projects" smooth={true} duration={500} offset={-70}>
+            <Link to="projects" smooth={true} duration={500} offset={-70} style={{ fontSize: "1rem" }}>
               Projects
             </Link>
           </li>
           <li>
-            <Link to="skills" smooth={true} duration={500} offset={-70}>
+            <Link to="skills" smooth={true} duration={500} offset={-70} style={{ fontSize: "1rem" }}>
               Skills
             </Link>
           </li>
           <li>
-            <Link to="contact" smooth={true} duration={500} offset={-70}>
+            <Link to="hobbies" smooth={true} duration={500} offset={-70} style={{ fontSize: "1rem" }}>
+              Hobbies
+            </Link>
+          </li>
+          <li>
+            <Link to="contact" smooth={true} duration={500} offset={-70} style={{ fontSize: "1rem" }}>
               Contact
             </Link>
           </li>
