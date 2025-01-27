@@ -15,10 +15,46 @@
 }
 
 .skills-icons {
-  display: flex;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr); /* Creates 5 columns */
+  justify-items: center; /* Centers the icons in each column */
   gap: 3rem;
   animation: slideIn 1s ease-in-out;
+}
+
+@media (max-width: 480px) {
+  .skills-icons {
+    flex-direction: column; /* Stack the icons vertically for small screens */
+    gap: 1.5rem;
+    grid-template-columns: 1fr; /* Single column for small screens */
+  }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+  .skills-icons {
+    gap: 2rem;
+    grid-template-columns: repeat(3, 1fr); /* 3 icons per row for tablets */
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .skills-icons {
+    gap: 2.5rem;
+    grid-template-columns: repeat(
+      4,
+      1fr
+    ); /* 4 icons per row for small laptops */
+  }
+}
+
+@media (min-width: 1025px) {
+  .skills-icons {
+    gap: 3rem;
+    grid-template-columns: repeat(
+      5,
+      1fr
+    ); /* 5 icons per row for wide screens */
+  }
 }
 
 .icon {
