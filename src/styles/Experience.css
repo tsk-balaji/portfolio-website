@@ -8,58 +8,7 @@
   backdrop-filter: blur(10px);
   border-radius: 10px;
   margin: 0 auto;
-}
-
-.section-title {
-  font-size: 2.5rem;
-  text-align: center;
-  color: #fff;
-  margin-bottom: 40px;
-  font-weight: bold;
-}
-
-.timeline {
-  position: relative;
-  margin: 0 auto;
-  padding: 20px 0;
-}
-
-.timeline:before {
-  content: "";
-  position: absolute;
-  width: 4px;
-  background: rgba(255, 255, 255, 0.2);
-  top: 0;
-  bottom: 0;
-  left: 50%;
-  transform: translateX(-50%);
-}
-
-.timeline-item {
-  position: relative;
-  margin: 20px 0;
-  width: calc(50% - 40px);
-}
-
-.timeline-item:nth-child(odd) {
-  left: 0;
-}
-
-.timeline-item:nth-child(even) {
-  left: calc(50% + 40px);
-}
-
-.timeline-dot {
-  position: absolute;
-  top: 20px;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 20px;
-  height: 20px;
-  background: rgba(255, 255, 255, 0.3);
-  border: 4px solid rgba(255, 255, 255, 0.8);
-  border-radius: 50%;
-  z-index: 1;
+  overflow: hidden; /* Prevents overflow */
 }
 
 .timeline-content {
@@ -71,6 +20,9 @@
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
   backdrop-filter: blur(10px);
   animation: fadeInUp 0.5s ease-in-out;
+  max-width: 100%; /* Ensures it fits within the parent */
+  height: auto; /* Keeps the content responsive */
+  box-sizing: border-box; /* Ensures padding doesn't overflow */
 }
 
 .timeline-content h3 {
