@@ -46,7 +46,12 @@ const Home = () => {
             className="actions pt-2 pb-2 text-center"
             style={{ margin: "20px", padding: "10px" }}
           >
-            <a href="/path/to/your-cv.pdf" className="btn primary" download>
+            <a
+              href="https://drive.google.com/file/d/1vQswToGv9vk1OneXIy10E-LfuyAHl6SD/view?usp=sharing"
+              className="btn primary"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               Download my Resume
             </a>
           </section>
