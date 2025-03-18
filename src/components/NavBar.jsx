@@ -78,17 +78,6 @@ const Navbar = () => {
           </li>
           <li>
             <Link
-              to="hobbies"
-              smooth={true}
-              duration={500}
-              offset={-70}
-              style={{ fontSize: "1rem" }}
-            >
-              Hobbies
-            </Link>
-          </li>
-          <li>
-            <Link
               to="contact"
               smooth={true}
               duration={500}
