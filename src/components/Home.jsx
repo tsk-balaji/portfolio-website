@@ -11,8 +11,6 @@ import Projects from "./Projects";
 import Skills from "./Skills";
 import Experience from "./Experience";
 import Education from "./Education";
-import Hobbies from "./Hobbies";
-import Certifications from "./Certifications";
 import myImage from "../assets/TSK_BG_BLUR_EDIT.jpeg";
 
 const Home = () => {
@@ -82,16 +80,6 @@ const Home = () => {
               >
                 <FaGithub />
               </a>
-              <a
-                href="https://www.instagram.com/tskbalaji"
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="Instagram"
-                style={{ color: "#E1306C", fontSize: "2rem" }}
-                title="Let's Connect"
-              >
-                <FaInstagram />
-              </a>
             </div>
           </section>
         </div>
@@ -118,15 +106,6 @@ const Home = () => {
         <Education />
       </section>
 
-      {/* Certifications Section */}
-      <section id="certifications" className="section">
-        <Certifications />
-      </section>
-
-      {/* Hobbies Section */}
-      <section id="hobbies" className="section">
-        <Hobbies />
-      </section>
 
       {/* Contact Section */}
       <section id="contact" className="section">
