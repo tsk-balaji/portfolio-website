@@ -84,7 +84,7 @@ const Home = () => {
           </section>
         </div>
         <div className="home-image">
-          <img src={myImage} alt="My Profile" />
+          <img src={myImage} alt="Project Management Tool Preview" class="project-image animate-zoom-in" loading="lazy" />
         </div>
       </div>
 
