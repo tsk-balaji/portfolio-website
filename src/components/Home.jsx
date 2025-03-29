@@ -3,15 +3,14 @@ import React, { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import "../styles/Home.css";
-import { FaLinkedin, FaGithub, FaInstagram } from "react-icons/fa";
-
+import { FaLinkedin, FaGithub } from "react-icons/fa";
 import Typed from "react-typeme";
 import Contact from "./Contact";
 import Projects from "./Projects";
 import Skills from "./Skills";
 import Experience from "./Experience";
 import Education from "./Education";
-import myImage from "../assets/TSK_BG_BLUR_EDIT.jpeg";
+import myImage from "../assets/ProfileImage.webp";
 
 const Home = () => {
   useEffect(() => {
@@ -20,28 +19,31 @@ const Home = () => {
 
   return (
     <section className="home">
+      <h1>
+        <span className="highlight">Welcome to my Portfolio</span>
+      </h1>
       <div className="container">
         <div className="home-content">
-          <h1>
-            <span className="highlight">Welcome to my Portfolio</span>
-          </h1>
           <div className="typed-wrapper">
-            <section id="about" className="section">
+            <div>
               <Typed
                 className="typed-text text-secondary"
                 strings={[
-                  "  I'm a passionate MERN Stack Developer with over 4 years of experience in designing and developing user-centric web applications.",
-                  "Proficient in modern technologies like React, Node.js, Express, and MongoDB to build scalable and efficient solutions.",
-                  "Dedicated to continuous learning and implementing best practices in web development.",
+                  "  Dynamic MERN Stack Developer with 4 years at Infosys.",
+                  " ",
+                  "Proficient in React, Node, Express, MongoDB. Builds scalable web apps, RESTful APIs, and microservices.",
+                  " ",
+                  "Skilled in testing (Jest), Agile/Scrum, performance optimization, and AWS deployment. Proven track record of efficient delivery and process improvement.",
                 ]}
-                typeSpeed={50}
-                backSpeed={70}
+                typeSpeed={60}
+                backSpeed={90}
                 showCursor={false}
               />
-            </section>
+            </div>
           </div>
+
           <section
-            className="actions pt-2 pb-2 text-center"
+            className="actions text-center"
             style={{ margin: "20px", padding: "10px" }}
           >
             <a
@@ -49,13 +51,17 @@ const Home = () => {
               className="btn primary"
               target="_blank"
               rel="noopener noreferrer"
+              style={{
+                fontSize: "1.1rem",
+                transition: "transform 0.3s ease-in-out",
+              }}
             >
               Download my Resume
             </a>
           </section>
 
           <section className="connect">
-            <h3>Connect with me :</h3>
+            <h3>Connect with me:</h3>
             <div
               className="social-links"
               style={{ display: "flex", justifyContent: "center", gap: "20px" }}
@@ -83,8 +89,13 @@ const Home = () => {
             </div>
           </section>
         </div>
+
         <div className="home-image">
-          <img src={myImage} alt="Project Management Tool Preview" class="project-image animate-zoom-in" loading="lazy" />
+          <img
+            src={myImage}
+            alt="Profile"
+            className="home-image animate-zoom-in"
+          />
         </div>
       </div>
 
@@ -92,7 +103,6 @@ const Home = () => {
         <Experience />
       </section>
 
-      {/* Projects Section */}
       <section id="projects" className="section">
         <Projects />
       </section>
@@ -101,13 +111,10 @@ const Home = () => {
         <Skills />
       </section>
 
-      {/* Education Section */}
       <section id="education" className="section">
         <Education />
       </section>
 
-
-      {/* Contact Section */}
       <section id="contact" className="section">
         <Contact />
       </section>
